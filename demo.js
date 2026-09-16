@@ -1,10 +1,10 @@
 /* Loaded so ?demo=1 can wake the glass without a live cabinet.
-   Not night-one content. Not Paul's words. */
+   Not night-one content. Not the upstream author's words. */
 window.JOE_DEMO = [
   {
     path: "NOW.md",
     name: "NOW.md",
-    text: "# NOW\n\nPort dad's glass, rename only, watch how Joe OS hits the cabinet schema.\n",
+    text: "# NOW\n\nPort the upstream glass, rename only, watch how Joe OS hits the cabinet schema.\n",
   },
   {
     path: "PROJECTS.md",
@@ -21,7 +21,7 @@ window.JOE_DEMO = [
   {
     path: "CONTINUITY.md",
     name: "CONTINUITY.md",
-    text: "# CONTINUITY\n\n## NOW\n\nPort dad's glass, rename only, watch how Joe OS hits the cabinet schema.\n",
+    text: "# CONTINUITY\n\n## NOW\n\nPort the upstream glass, rename only, watch how Joe OS hits the cabinet schema.\n",
   },
 ];
 
