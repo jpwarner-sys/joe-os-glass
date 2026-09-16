@@ -1,9 +1,9 @@
 # Joe OS glass
 
-Rename-only port of `jpwarner-sys/pw-os-glass` (Paul Warner OS, pass 2).
+Rename-only port of the upstream glass, pass 2.
 Parser and chrome are unchanged. Labels and bind target say Joe OS.
 
-Dad's cabinet stays on his Drive. This copy does not phone his folder.
+The upstream cabinet stays on its own Drive. This copy does not phone that folder.
 
 ## URL
 
@@ -34,7 +34,7 @@ Folder bind (Chrome / Edge): point at `fixtures/cabinet` to wake tiles, or at a 
 
 ## Contract
 
-Same as `PW_OS/Build/packet/SCHEMA.md`. Parser is `parse.js`.
+Same as the upstream packet's `SCHEMA.md`. Parser is `parse.js`.
 Looks for `NOW.md`, `PROJECTS.md`, `VESSELS.md`, `modules/*.md`.
 Ignored: dotfiles, `*.keep`, `README.md`, `artifacts/`.
 Workshop halt if the bound folder has Brainstorm/Build/Design and no `NOW.md`.
@@ -48,4 +48,4 @@ Click a tile to focus. Double-click to cycle size. Dump line does not reply.
 
 ## Not this
 
-Walker. Native `.app`. Chat on the glass. Live 6_APP clasp. Paul's cabinet. Sample modules as if they were his.
+Walker. Native `.app`. Chat on the glass. Live 6_APP clasp. The upstream cabinet. Sample modules as if they were his.
