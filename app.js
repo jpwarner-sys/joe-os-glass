@@ -1,4 +1,4 @@
-/* Joe OS glass — watch files. Do no work except dump. */
+/* JW_OS glass — watch files. Do no work except dump. */
 (function () {
   "use strict";
   var state = {
@@ -10,7 +10,7 @@
     folderId: localStorage.getItem("joe.folderId") || "",
     dirHandle: null,
     token: null,
-    clientId: (window.JOE_CONFIG && window.JOE_CONFIG.GOOGLE_CLIENT_ID) || "",
+    clientId: (window.JW_CONFIG && window.JW_CONFIG.GOOGLE_CLIENT_ID) || "",
     catalog: { halt: false, now: "", projects: [], vessels: [], modules: [], empty: true },
     bound: false,
   };
@@ -230,10 +230,10 @@
     if (!ok) box.value = text;
   }
   function demo() {
-    state.pipe = "demo"; state.bound = true; applyFiles(window.JOE_DEMO || []);
+    state.pipe = "demo"; state.bound = true; applyFiles(window.JW_DEMO || []);
   }
   function react() {
-    state.pipe = "react"; state.bound = false; applyFiles(window.JOE_REACT || []);
+    state.pipe = "react"; state.bound = false; applyFiles(window.JW_REACT || []);
   }
   function tick() {
     if (state.pipe === "fs" && state.dirHandle) readFS();
