@@ -11,7 +11,7 @@ Repo: `https://github.com/jpwarner-sys/joe-os-glass`
 
 After GitHub Pages is on for `jpwarner-sys/joe-os-glass` (Settings → Pages → branch `main` / root):
 
-`https://jpwarner-sys.github.io/joe-os-glass/`
+`https://jpwarner-sys.github.io/joe-os-glass/` (or a custom subdomain like `joe-glass.ontologyhome.ca` to avoid origin storage collisions with other apps)
 
 `?demo=1` wakes on fixture files. `?react=1` shows the void against a Joe-OS-shaped listing.
 
