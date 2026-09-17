@@ -2,19 +2,19 @@
 (function () {
   "use strict";
   var state = {
-    mode: localStorage.getItem("joe.mode") || "fill",
-    density: Math.max(0, Math.min(3, parseInt(localStorage.getItem("joe.density") || "1", 10) || 1)),
-    focus: localStorage.getItem("joe.focus") || "now",
+    mode: localStorage.getItem("glass.joe.mode") || "fill",
+    density: Math.max(0, Math.min(3, parseInt(localStorage.getItem("glass.joe.density") || "1", 10) || 1)),
+    focus: localStorage.getItem("glass.joe.focus") || "now",
     sizes: {},
-    pipe: localStorage.getItem("joe.pipe") || "",
-    folderId: localStorage.getItem("joe.folderId") || "",
+    pipe: localStorage.getItem("glass.joe.pipe") || "",
+    folderId: localStorage.getItem("glass.joe.folderId") || "",
     dirHandle: null,
     token: null,
     clientId: (window.JW_CONFIG && window.JW_CONFIG.GOOGLE_CLIENT_ID) || "",
     catalog: { halt: false, now: "", projects: [], vessels: [], modules: [], empty: true },
     bound: false,
   };
-  try { state.sizes = JSON.parse(localStorage.getItem("joe.sizes") || "{}"); } catch (e) { state.sizes = {}; }
+  try { state.sizes = JSON.parse(localStorage.getItem("glass.joe.sizes") || "{}"); } catch (e) { state.sizes = {}; }
   function $(id) { return document.getElementById(id); }
   function applyChrome() {
     document.body.className = (state.mode === "compact" ? "compact" : "fill") + " density-" + state.density + (state.catalog.halt ? " halt" : "");
@@ -26,12 +26,12 @@
     $("bind-pip").id = "bind-pip";
   }
   function persist() {
-    localStorage.setItem("joe.mode", state.mode);
-    localStorage.setItem("joe.density", String(state.density));
-    localStorage.setItem("joe.focus", state.focus || "");
-    localStorage.setItem("joe.sizes", JSON.stringify(state.sizes));
-    localStorage.setItem("joe.pipe", state.pipe || "");
-    localStorage.setItem("joe.folderId", state.folderId || "");
+    localStorage.setItem("glass.joe.mode", state.mode);
+    localStorage.setItem("glass.joe.density", String(state.density));
+    localStorage.setItem("glass.joe.focus", state.focus || "");
+    localStorage.setItem("glass.joe.sizes", JSON.stringify(state.sizes));
+    localStorage.setItem("glass.joe.pipe", state.pipe || "");
+    localStorage.setItem("glass.joe.folderId", state.folderId || "");
   }
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
